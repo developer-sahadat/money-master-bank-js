@@ -10,11 +10,6 @@ function expenses(){
     return totalExpenses;
 }
 
-
-
-
-
-
 /*********************Calculate button code********************/
 
 document.getElementById('Calculate-btn').addEventListener('click', function(){
@@ -23,3 +18,7 @@ document.getElementById('Calculate-btn').addEventListener('click', function(){
     const balance=parseFloat(incomeInput.value)-expenses();
     document.getElementById('balance').innerText=balance;
 })
+
+
+/************************save button code***************************/
+document.getElementById('save-btn')
