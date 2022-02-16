@@ -17,9 +17,47 @@
 <body>
     
     <!--------------------Vitality Banks code start now----------------------->
-        <section>
+        <section class="p-4">
             <div class="container">
-                <h1>Vitality Banks</h1>
+                <h1 class="pt-5 pb-4 text-center fw-bold">Vitality Banks</h1>
+                <div class="row g-2 align-items-center ">
+                    <div class="col-lg-6 text-center">
+                        <img src="images/vitality-banks.jpeg" class="img-fluid rounded"> 
+                    </div>
+                    <div class="col-lg-6 p-lg-5">
+                        <div class="text-center p-lg-5 bg-light rounded">
+                                <h3 class="fw-bolder">Income</h3>
+                                <div class="d-flex align-items-center">
+                                   <h6 class="pe-4">Income:</h6>  
+                                  <input type="text" class="form-control w-75" id="income-input">
+                                </div>
+                                <h4 class="pt-4 pb-3 fw-bolder">Expenses</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <h6 class="pe-5">Food:</h6>  
+                                   <input type="text" class="form-control w-75" id="food-input">
+                                 </div>
+                                 <div class="d-flex align-items-center mb-3">
+                                    <h6 class="pe-5">Rent:</h6>  
+                                   <input type="text" class="form-control w-75" id="rent-input">
+                                 </div>
+                                 <div class="d-flex align-items-center">
+                                    <h6 class="pe-4">Clothes:</h6>  
+                                   <input type="text" class="form-control w-75" id="clothes-input">
+                                 </div>
+                                 <button class="btn btn-primary w-50 mt-4" type="button" id="Calculate-btn">Calculate</button>
+                                 <h4 class="pt-4 fw-bolder">Total Expenses: <span id="total-expenses"></span></h4>
+                                 <h4 class="pt-4 fw-bolder">Balance:  <span id="balance"></span></h4>
+                                 <div class="d-flex align-items-center pt-3">
+                                    <h6 class="pe-3 pt-2">Save:</h6>  
+                                   <input type="text" class="form-control w-50" id="saving-input"> 
+                                   <span class="ps-3 pe-3">%</span>
+                                   <button class="btn btn-primary w-25" type="button">Save</button>
+                                 </div>
+                                 <h4 class="pt-5 fw-bolder">Saving Amount: <span id="saving-amount"></span></h4>
+                                 <h4 class="pt-2 fw-bolder">Remaining Balance: <span id="remaining-balance"></span></h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     <!--------------------Vitality Banks code end now----------------------->
