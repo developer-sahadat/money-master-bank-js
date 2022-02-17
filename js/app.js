@@ -1,9 +1,6 @@
-
-
 /***********expenses total ammount****************/
 function expensesAmmount(){
-
-     //input expenses tages
+     // expenses input tages
      const foodInput=document.getElementById('food-input');
      const rentInput=document.getElementById('rent-input');
      const clothesInput=document.getElementById('clothes-input');
@@ -13,9 +10,9 @@ function expensesAmmount(){
     
      //error handling
      if(foodAmmount>0 && typeof foodAmmount=='number' && rentAmmount>0 && typeof rentAmmount=='number' && clothesAmmount>0 && typeof clothesAmmount=='number'){
+
         // expenses total ammount
         const totalExpenses=foodAmmount+rentAmmount+clothesAmmount;
-
         // subtraction function call
         subtraction('income-input', totalExpenses, 'balance')
      }else{
@@ -23,8 +20,6 @@ function expensesAmmount(){
      }
            
 }
-
-
 
 // subtraction
 function subtraction(incomeBalanceInput, expenses,amountId){
@@ -46,24 +41,18 @@ function subtraction(incomeBalanceInput, expenses,amountId){
 
 
 /*********************Calculate button code********************/
-
 document.getElementById('Calculate-btn').addEventListener('click', function(){
-expensesAmmount()
-  
+expensesAmmount();
 })
-
-
-
 
 /************************save button code***************************/
 document.getElementById('save-btn').addEventListener('click', function(){
     const incomeInput=document.getElementById('income-input');
     const savingInput=document.getElementById('saving-input');
 
-  
     const savingAmount=(parseFloat(incomeInput.value)*parseFloat(savingInput.value))/100;
     const balance=document.getElementById('balance').innerText;
-    
+
     //error handling
     if(parseInt(balance)>savingAmount){
         document.getElementById('saving-amount').innerText=savingAmount;
@@ -72,7 +61,7 @@ document.getElementById('save-btn').addEventListener('click', function(){
         alert('You do not have enough money to save')
     }
  
-})
+});
 
 
 
